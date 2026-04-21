@@ -29,7 +29,7 @@
       color: inherit;
     }
 
-    /* ── NAV ── */
+    /* navbar */
     nav {
       position: fixed;
       top: 0;
@@ -130,7 +130,7 @@
       background: #1e1810;
     }
 
-    /* ── PAGE HERO ── */
+    /* hero */
     .page-hero {
       height: 62vh;
       min-height: 400px;
@@ -208,7 +208,7 @@
       color: #f5c4a1;
     }
 
-    /* ── SHARED SECTION ── */
+    /* Shared */
     .sec {
       padding: 7rem 7%;
     }
@@ -233,7 +233,7 @@
       font-style: italic;
     }
 
-    /* ── STORY SECTION ── */
+    /* Story */
     .story {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -288,7 +288,7 @@
       opacity: .7;
     }
 
-    /* ── STATS STRIP ── */
+    /* Strip */
     .strip {
       display: flex;
       justify-content: center;
@@ -624,7 +624,7 @@
         grid-template-columns: 1fr 1fr;
       }
       .strip{
-        margin-top: 500px;
+        margin-top: 400px;
       }
       .team-grid {
         grid-template-columns: 1fr 1fr;
@@ -741,7 +741,7 @@
         grid-template-columns: 1fr;
       }
       .strip{
-        margin-top: 600px;
+        margin-top: 447px;
       }
       .strip-item {
         flex: 1 1 100%;
@@ -819,4 +819,9 @@
 
     @media (max-width: 900px) {
       .hbg { display: flex; }
+    }
+    @media (max-width: 320px) {
+      .strip{
+        margin-top: 500px;
+      }
     }
