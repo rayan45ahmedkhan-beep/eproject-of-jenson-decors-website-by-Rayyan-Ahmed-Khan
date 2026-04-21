@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Jensen Decors</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/Contact us.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <img src="Images/Logo.jpg" alt="Logo" class="logo">
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">Contact Us</a></li>
+    </ul>
+
+    <a class="nav-cta" href="products.html">Browse All</a>
+
+    <button class="hbg" id="hbg" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mob-nav" id="mobNav">
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero-img">
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=80"
+        alt="Jensen Decors Showroom" />
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-tag">Reach Out</div>
+      <h1 class="page-hero-h1">Contact <em>Us</em></h1>
+    </div>
+  </div>
+
+  <div class="contact-wrap">
+
+    <div class="info-panel reveal">
+      <div class="eyebrow">We're Here to Help</div>
+      <h2 class="sec-h2">Visit or <em>Connect</em></h2>
+      <div class="info-list">
+
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <div class="info-label">Showroom Address</div>
+            <div class="info-val">
+              Jensen Decors, Plot 14-C,<br>
+              Khayaban-e-Ittehad, Phase VI,<br>
+              DHA, Karachi — 75500, Pakistan
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">✉</div>
+          <div>
+            <div class="info-label">Email Us</div>
+            <div class="info-val">
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">info@jensendecors.com</a><br>
+              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">sales@jensendecors.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <div class="info-label">Phone</div>
+            <div class="info-val">
+              <a href="tel:+922135880001">+92 21 3588-0001</a><br>
+              <a href="tel:+923001234567">+92 300 123-4567</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <div class="info-label">Opening Hours</div>
+            <div class="info-val">
+              Mon – Sat: 10:00 am – 8:00 pm<br>
+              Sunday: 12:00 pm – 6:00 pm
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form-panel reveal reveal-d1">
+      <div class="eyebrow">Send a Message</div>
+      <h2 class="sec-h2">Drop Us a <em>Line</em></h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" placeholder="Enter your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" placeholder="enter your last name" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your Email address" />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number (optional)</label>
+        <input type="tel" id="phone" placeholder="Enter your Phone No" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option value="">— Select a topic —</option>
+          <option>Product Enquiry</option>
+          <option>Order Status</option>
+          <option>Visit the Showroom</option>
+          <option>Design Consultation</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us how we can help you…"></textarea>
+      </div>
+
+      <button class="btn-submit" onclick="submitForm()">Send Message</button>
+
+      <div class="success-msg" id="successMsg">
+        ✦ &nbsp;Thank you! We've received your message and will get back to you within 24 hours.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STATS STRIP -->
+  <div class="strip reveal">
+    <div class="strip-item">
+      <div class="strip-num">127+</div>
+      <div class="strip-label">Products</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num">6</div>
+      <div class="strip-label">Brands</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num">18</div>
+      <div class="strip-label">Years Experience</div>
+    </div>
+    <div class="strip-item">
+      <div class="strip-num">4k+</div>
+      <div class="strip-label">Happy Clients</div>
+    </div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-section reveal">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9048060540895!2d67.07800!3d24.81460!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d4bbf%3A0x9cf92f44555a0c23!2sDHA%20Phase%206%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Jensen Decors — DHA Karachi">
+    </iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-logo">Jensen<span>Decors</span></div>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <span class="foot-copy">© 2024 Jensen Decors. All rights reserved.</span>
+  </footer>
+
+  <script>
+  
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+    var hbg = document.getElementById('hbg');
+    var mobNav = document.getElementById('mobNav');
+    var isOpen = false;
+
+    hbg.addEventListener('click', function () {
+      isOpen = !isOpen;
+
+      hbg.classList.toggle('open', isOpen);
+      hbg.setAttribute('aria-expanded', isOpen);
+
+      if (isOpen) {
+        mobNav.style.display = 'flex';   
+        mobNav.offsetHeight;
+        mobNav.classList.add('open');
+      } else {
+        mobNav.classList.remove('open');
+        mobNav.addEventListener('transitionend', function handler() {
+          if (!isOpen) mobNav.style.display = 'none';
+          mobNav.removeEventListener('transitionend', handler);
+        });
+      }
+    });
+
+    mobNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        isOpen = false;
+        hbg.classList.remove('open');
+        hbg.setAttribute('aria-expanded', 'false');
+        mobNav.classList.remove('open');
+        mobNav.addEventListener('transitionend', function handler() {
+          mobNav.style.display = 'none';
+          mobNav.removeEventListener('transitionend', handler);
+        });
+      });
+    });
+
+    function submitForm() {
+      var fname = document.getElementById('fname').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value.trim();
+
+      if (!fname) { alert('Please enter your first name.'); return; }
+      if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+      if (!subject) { alert('Please select a subject.'); return; }
+      if (!message) { alert('Please write your message.'); return; }
+
+      document.getElementById('successMsg').style.display = 'block';
+
+      document.getElementById('fname').value = '';
+      document.getElementById('lname').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+</body>
+
+</html>
