@@ -241,6 +241,7 @@
     }
 
     .story-img {
+      height: 100%;
       position: relative;
       overflow: hidden;
     }
@@ -250,6 +251,7 @@
     }
 
     .story-body {
+      height: 100%;
       background: #fdf0e8;
       padding: 5rem 6% 6rem 7%;
       display: flex;
@@ -290,6 +292,7 @@
 
     /* Strip */
     .strip {
+      height: 20%;
       display: flex;
       justify-content: center;
       background: #fdf0e8;
